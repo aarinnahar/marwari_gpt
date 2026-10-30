@@ -1,0 +1,502 @@
+[
+  {
+    "instruction": "What does 'मुळकणो' (Mulkano) mean in Marwari?",
+    "input": "",
+    "output": "'मुळकणो' means 'to smile'. Example: 'टाबर मुळक रियो है' (The child is smiling)."
+  },
+  {
+    "instruction": "Translate and explain 'रूख' (Rookh).",
+    "input": "",
+    "output": "'रूख' translates to 'tree'. Example: 'ओ रूख घणो मोटो है' (This tree is very big)."
+  },
+  {
+    "instruction": "How is the word 'ठा' (Thaa) used?",
+    "input": "",
+    "output": "'ठा' means 'knowledge' or 'awareness'. Example: 'म्हाने ठा कोनी' (I don't know)."
+  },
+  {
+    "instruction": "What does 'भायली' (Bhayli) mean?",
+    "input": "",
+    "output": "'भायली' means 'female friend'. Example: 'वा म्हारी भायली है' (She is my friend)."
+  },
+  {
+    "instruction": "Explain the Marwari word 'लूण' (Loon).",
+    "input": "",
+    "output": "'लूण' means 'salt'. Example: 'साग में लूण कम है' (There is less salt in the vegetable)."
+  },
+  {
+    "instruction": "What is 'खाटो' (Khato) in a culinary context?",
+    "input": "",
+    "output": "'खाटो' means 'sour', but it often specifically refers to buttermilk curry (Kadi). Example: 'आज खाटो बणायो है' (Today we made Kadi)."
+  },
+  {
+    "instruction": "Translate the word 'रोही' (Rohi).",
+    "input": "",
+    "output": "'रोही' means 'desert wilderness' or 'scrubland'. Example: 'ऊंट रोही में चरे है' (The camel grazes in the wilderness)."
+  },
+  {
+    "instruction": "What does 'नान्हो' (Naanho) mean?",
+    "input": "",
+    "output": "'नान्हो' means 'small' or 'young'. Example: 'ओ टाबर घणो नान्हो है' (This child is very young)."
+  },
+  {
+    "instruction": "How do you say 'black' and 'white' in Marwari?",
+    "input": "",
+    "output": "'कालो' (Kaalo) is black and 'धोळो' (Dholo) is white. Example: 'धोळो गाबो' (White clothes)."
+  },
+  {
+    "instruction": "What is the meaning of 'रातो' (Raato)?",
+    "input": "",
+    "output": "'रातो' means 'red'. Example: 'रातो रंग' (Red color)."
+  },
+  {
+    "instruction": "Explain 'उबो' (Ubo) and 'सूतो' (Sooto).",
+    "input": "",
+    "output": "'उबो' means 'standing' and 'सूतो' means 'sleeping/lying down'. Example: 'तू उबो क्यूं है?' (Why are you standing?)."
+  },
+  {
+    "instruction": "What does 'डीकरो' (Deekro) mean?",
+    "input": "",
+    "output": "'डीकरो' means 'son' and 'डीकरी' (Deekri) means 'daughter'."
+  },
+  {
+    "instruction": "Define 'पीहर' (Peehar).",
+    "input": "",
+    "output": "'पीहर' is a woman's 'maternal home'. Example: 'वा पीहर गई है' (She has gone to her maternal home)."
+  },
+  {
+    "instruction": "What is 'काची' (Kaachi) vs 'पाकी' (Paaki)?",
+    "input": "",
+    "output": "'काची' means 'unripe' or 'weak', while 'पाकी' means 'ripe' or 'strong'. Example: 'काची कैरी' (Unripe mango)."
+  },
+  {
+    "instruction": "Translate the word 'भींत' (Bheent).",
+    "input": "",
+    "output": "'भींत' means 'wall'. Example: 'भींत माते मत बैठ' (Don't sit on the wall)."
+  },
+  {
+    "instruction": "What does 'बाखल' (Baakhal) mean?",
+    "input": "",
+    "output": "'बाखल' refers to a courtyard or neighborhood. Example: 'म्हारी बाखल में घणा घर है' (There are many houses in my courtyard area)."
+  },
+  {
+    "instruction": "How do you refer to a 'well' in Marwari?",
+    "input": "",
+    "output": "A well is called 'कूवो' (Koovo). Example: 'कूवो सूको है' (The well is dry)."
+  },
+  {
+    "instruction": "What is a 'जोड़' (Johad)?",
+    "input": "",
+    "output": "'जोड़' is a small community pond to catch rainwater. Example: 'जोड़ में पाणी आयो है' (Water has come into the pond)."
+  },
+  {
+    "instruction": "Explain 'गोचर' (Gochar).",
+    "input": "",
+    "output": "'गोचर' is village pasture land reserved for cows. Example: 'गायां गोचर में है' (Cows are in the pasture)."
+  },
+  {
+    "instruction": "What does 'धोळ' (Dhol) mean?",
+    "input": "",
+    "output": "'धोळ' translates to 'dust'. Example: 'बारै धोळ उड़े है' (Dust is flying outside)."
+  },
+  {
+    "instruction": "Define 'भाटो' (Bhaato).",
+    "input": "",
+    "output": "'भाटो' means 'stone' or 'rock'. Example: 'भाटो मत मार' (Don't throw a stone)."
+  },
+  {
+    "instruction": "What is 'कांकड़' (Kaankar)?",
+    "input": "",
+    "output": "'कांकड़' refers to the village boundary or outskirts. Example: 'कांकड़ पर मंदिर है' (There is a temple on the village outskirts)."
+  },
+  {
+    "instruction": "Translate 'मारग' (Maarig).",
+    "input": "",
+    "output": "'मारग' means 'path' or 'road'. Example: 'ओ मारग कठे जावे?' (Where does this road go?)."
+  },
+  {
+    "instruction": "What does 'गाबा' (Gaaba) mean?",
+    "input": "",
+    "output": "'गाबा' means 'clothes'. Example: 'नवा गाबा पेरिया है' (Wearing new clothes)."
+  },
+  {
+    "instruction": "Explain 'पोतियो' (Potiyo).",
+    "input": "",
+    "output": "'पोतियो' is a piece of cloth, often used as a simple turban or headwrap."
+  },
+  {
+    "instruction": "What are 'मोजड़ी' (Mojari)?",
+    "input": "",
+    "output": "'मोजड़ी' refers to traditional Rajasthani leather shoes. Example: 'जोधपुरी मोजड़ी'."
+  },
+  {
+    "instruction": "What does 'सुगन' (Sugan) mean?",
+    "input": "",
+    "output": "'सुगन' means 'omen' or 'auspicious sign'. Example: 'चोखो सुगन होयो' (It was a good omen)."
+  },
+  {
+    "instruction": "Define 'जातरू' (Jaatru).",
+    "input": "",
+    "output": "'जातरू' means 'pilgrim' or 'traveler', especially those going to Ramdevra or other shrines."
+  },
+  {
+    "instruction": "What is 'धोक' (Dhok)?",
+    "input": "",
+    "output": "'धोक' means to 'bow down' or 'worship'. Example: 'देवता रे धोक दे' (Bow down to the deity)."
+  },
+  {
+    "instruction": "Translate 'चून' (Choon).",
+    "input": "",
+    "output": "'चून' means 'flour'. Example: 'चून खतम हो गियो' (The flour is finished)."
+  },
+  {
+    "instruction": "What does 'बणज' (Banaj) mean?",
+    "input": "",
+    "output": "'बणज' means 'business' or 'trade'. Example: 'बणज चोखो चाले है' (Business is going well)."
+  },
+  {
+    "instruction": "How do you say 'shop' in Marwari?",
+    "input": "",
+    "output": "A shop is often called 'हाट' (Haat). Example: 'हाट सूँ सोदो ला' (Bring goods from the shop)."
+  },
+  {
+    "instruction": "What is a 'सेठ' (Seth)?",
+    "input": "",
+    "output": "'सेठ' refers to a merchant, wealthy man, or shop owner."
+  },
+  {
+    "instruction": "Define 'गोडो' (Godo).",
+    "input": "",
+    "output": "'गोडो' means 'knee'. Example: 'म्हारे गोडे में दरद है' (I have pain in my knee)."
+  },
+  {
+    "instruction": "What does 'माथो' (Maatho) refer to?",
+    "input": "",
+    "output": "'माथो' means 'head'. Example: 'माथो दुख रियो है' (My head is aching)."
+  },
+  {
+    "instruction": "Translate 'तातौ' (Taato) and 'सीळौ' (Seelo).",
+    "input": "",
+    "output": "'तातौ' means 'hot' and 'सीळौ' means 'cold/stale'. Example: 'तातौ पाणी' (Hot water)."
+  },
+  {
+    "instruction": "What is 'उणियारो' (Uniyaro)?",
+    "input": "",
+    "output": "'उणियारो' means 'face' or 'facial likeness'. Example: 'उणरो उणियारो बापू जिसी है' (His face is like his father's)."
+  },
+  {
+    "instruction": "Explain 'सयाणो' (Sayaano).",
+    "input": "",
+    "output": "'सयाणो' means 'smart', 'wise', or 'clever'. Example: 'टाबर घणो सयाणो है' (The child is very smart)."
+  },
+  {
+    "instruction": "What does 'चीकणो' (Cheekno) mean?",
+    "input": "",
+    "output": "'चीकणो' means 'smooth' or 'oily/greasy'. Example: 'चीकणो रस्तो' (Slippery road)."
+  },
+  {
+    "instruction": "Define 'नीठ' (Neeth).",
+    "input": "",
+    "output": "'नीठ' means 'hardly', 'barely', or 'with great difficulty'. Example: 'मैं नीठ पोचियो' (I barely arrived)."
+  },
+  {
+    "instruction": "What is 'सीरो' (Seero)?",
+    "input": "",
+    "output": "'सीरो' is a traditional sweet dish (Halwa), usually made of wheat flour, ghee, and sugar/jaggery."
+  },
+  {
+    "instruction": "Translate 'सांगरी' (Sangri).",
+    "input": "",
+    "output": "'सांगरी' is the bean of the Khejri tree, a famous Marwari vegetable."
+  },
+  {
+    "instruction": "What does 'काको' (Kaako) mean?",
+    "input": "",
+    "output": "'काको' means 'paternal uncle' (father's brother)."
+  },
+  {
+    "instruction": "How is 'मोटो' (Moto) used?",
+    "input": "",
+    "output": "'मोटो' can mean 'fat' or 'elder/big'. Example: 'मोटो भाई' (Elder brother) or 'मोटो मिनख' (Fat man)."
+  },
+  {
+    "instruction": "What is 'सासरौ' (Saasro)?",
+    "input": "",
+    "output": "'सासरौ' refers to one's 'in-laws house'. Example: 'बींदणी सासरै जावे है' (The bride is going to her in-laws)."
+  },
+  {
+    "instruction": "Define 'बाड़' (Baad).",
+    "input": "",
+    "output": "'बाड़' means 'fence', typically made of dry thorns or bushes around a field."
+  },
+  {
+    "instruction": "What does 'नाडी' (Naadi) mean?",
+    "input": "",
+    "output": "'नाडी' is a small local pond or water reservoir in villages."
+  },
+  {
+    "instruction": "Explain 'ओरण' (Oran).",
+    "input": "",
+    "output": "'ओरण' is a sacred grove or forest patch dedicated to a local deity where cutting trees is forbidden."
+  },
+  {
+    "instruction": "What is 'बोकड़ियो' (Bokdiyo)?",
+    "input": "",
+    "output": "'बोकड़ियो' refers to a male goat."
+  },
+  {
+    "instruction": "Translate 'चाकर' (Chaakar).",
+    "input": "",
+    "output": "'चाकर' means 'servant' or 'helper'."
+  },
+  {
+    "instruction": "What does 'मुलक' (Mulk) mean?",
+    "input": "",
+    "output": "'मुलक' means 'country' or 'native region'. Example: 'आपणो मुलक' (Our region)."
+  },
+  {
+    "instruction": "Define 'नथ' (Nath).",
+    "input": "",
+    "output": "'नथ' is a traditional 'nose ring' worn by women."
+  },
+  {
+    "instruction": "What is 'मटकी' (Matki)?",
+    "input": "",
+    "output": "'मटकी' is a small earthen pitcher for storing cool water."
+  },
+  {
+    "instruction": "Explain 'बावलियो' (Bawaliyo).",
+    "input": "",
+    "output": "'बावलियो' means 'mad', 'crazy', or 'foolish'. Example: 'तू बावलियो हो गियो कांई?' (Have you gone crazy?)."
+  },
+  {
+    "instruction": "What does 'निठल्लो' (Nithallo) mean?",
+    "input": "",
+    "output": "'निठल्लो' means 'lazy' or 'unemployed'. Example: 'निठल्लो बैठो है' (Sitting idle)."
+  },
+  {
+    "instruction": "Translate 'करड़ो' (Kardo).",
+    "input": "",
+    "output": "'करड़ो' means 'hard', 'strict', or 'stiff'. Example: 'करड़ो काम' (Hard work)."
+  },
+  {
+    "instruction": "What is 'भुआ' (Bhua)?",
+    "input": "",
+    "output": "'भुआ' means 'paternal aunt' (father's sister)."
+  },
+  {
+    "instruction": "Define 'छप्पर' (Chhappar).",
+    "input": "",
+    "output": "'छप्पर' is a thatched roof made of grass or leaves."
+  },
+  {
+    "instruction": "What does 'डगर' (Dagar) mean?",
+    "input": "",
+    "output": "'डगर' means 'path' or 'trail'. Example: 'डगर माते चाल' (Walk on the path)."
+  },
+  {
+    "instruction": "Explain 'साफो' (Saafa).",
+    "input": "",
+    "output": "'साफो' is a traditional Rajasthani turban, worn as a symbol of pride."
+  },
+  {
+    "instruction": "What is 'सवामणी' (Savamani)?",
+    "input": "",
+    "output": "'सवामणी' is a grand food offering made to a deity, typically 50 kgs of food."
+  },
+  {
+    "instruction": "Translate 'लापसी' (Laapsi).",
+    "input": "",
+    "output": "'लापसी' is a sweet porridge made from cracked wheat, roasted in ghee and sweetened."
+  },
+  {
+    "instruction": "What does 'गोळ' (Gol) mean?",
+    "input": "",
+    "output": "'गोळ' or 'गुड़' means 'jaggery'."
+  },
+  {
+    "instruction": "Define 'डंडो' (Dando).",
+    "input": "",
+    "output": "'डंडो' is a stick or baton."
+  },
+  {
+    "instruction": "What is 'दाँत' (Daant)?",
+    "input": "",
+    "output": "'दाँत' means 'teeth'."
+  },
+  {
+    "instruction": "Explain 'जीभ' (Jeebh).",
+    "input": "",
+    "output": "'जीभ' means 'tongue'."
+  },
+  {
+    "instruction": "What does 'कान' (Kaan) refer to?",
+    "input": "",
+    "output": "'कान' means 'ear'."
+  },
+  {
+    "instruction": "Translate 'चूड़ो' (Choodo).",
+    "input": "",
+    "output": "'चूड़ो' refers to 'bangles', usually ivory or plastic worn on the entire arm by married women."
+  },
+  {
+    "instruction": "What are 'पायल/कड़ला' (Payal/Kadla)?",
+    "input": "",
+    "output": "'कड़ला' are traditional heavy silver anklets."
+  },
+  {
+    "instruction": "Define 'डाम' (Daam).",
+    "input": "",
+    "output": "'डाम' means a 'burn mark' or 'brand', historically used for traditional medical treatment or animal branding."
+  },
+  {
+    "instruction": "What does 'सूळ' (Sool) mean?",
+    "input": "",
+    "output": "'सूळ' means 'thorn'. Example: 'पग में सूळ चुभ गी' (A thorn pricked the foot)."
+  },
+  {
+    "instruction": "Explain 'छोरा' (Chhora) and 'छोरी' (Chhori).",
+    "input": "",
+    "output": "'छोरा' means 'boy' and 'छोरी' means 'girl'. Example: 'छोरा खेल रियो है' (The boy is playing)."
+  },
+  {
+    "instruction": "What is 'लूक' (Look)?",
+    "input": "",
+    "output": "'लूक' means 'to hide'. Example: 'वा लूक गी' (She hid)."
+  },
+  {
+    "instruction": "Translate 'काळ' (Kaal).",
+    "input": "",
+    "output": "'काळ' refers to 'famine' or 'drought', a common historical occurrence in Marwar."
+  },
+  {
+    "instruction": "What does 'बाजरिया' (Baajriya) mean?",
+    "input": "",
+    "output": "'बाजरिया' or 'बाजरी' refers to 'pearl millet', the staple grain of Rajasthan."
+  },
+  {
+    "instruction": "Define 'मोट्यार' (Motyaar).",
+    "input": "",
+    "output": "'मोट्यार' means 'young man' or 'adult male'."
+  },
+  {
+    "instruction": "What is 'लुगायां' (Lugayaan)?",
+    "input": "",
+    "output": "'लुगायां' is the plural form for 'women' or 'wives'."
+  },
+  {
+    "instruction": "Explain 'बींद' (Beend).",
+    "input": "",
+    "output": "'बींद' translates to 'bridegroom'."
+  },
+  {
+    "instruction": "What does 'बरतन' (Bartan) or 'बांसण' (Baansan) mean?",
+    "input": "",
+    "output": "'बांसण' means 'utensils' or 'vessels' used in the kitchen."
+  },
+  {
+    "instruction": "Translate 'तगार' (Tagaar).",
+    "input": "",
+    "output": "'तगार' is a broad, shallow metal pan used for carrying sand or cement."
+  },
+  {
+    "instruction": "What is 'बाल्टी' (Baalti)?",
+    "input": "",
+    "output": "'बाल्टी' means 'bucket'."
+  },
+  {
+    "instruction": "Define 'सड़क' (Sadak) or 'डामर' (Daamar).",
+    "input": "",
+    "output": "'डामर' refers to a tar/asphalt 'road'."
+  },
+  {
+    "instruction": "What does 'आभ' (Aabh) mean?",
+    "input": "",
+    "output": "'आभ' means 'sky' or 'heavens'. Example: 'आभ में बादळ है' (There are clouds in the sky)."
+  },
+  {
+    "instruction": "Explain 'बादळ' (Baadal).",
+    "input": "",
+    "output": "'बादळ' means 'cloud'."
+  },
+  {
+    "instruction": "What is 'चांद' (Chaand) and 'सूरज' (Sooraj)?",
+    "input": "",
+    "output": "'चांद' is 'moon' and 'सूरज' is 'sun'."
+  },
+  {
+    "instruction": "Translate 'तारा' (Taara).",
+    "input": "",
+    "output": "'तारा' means 'stars'."
+  },
+  {
+    "instruction": "What does 'काळोती' (Kaaloti) mean?",
+    "input": "",
+    "output": "'काळोती' refers to 'darkness' or a 'pitch-black night'."
+  },
+  {
+    "instruction": "Define 'चांदणो' (Chaandno).",
+    "input": "",
+    "output": "'चांदणो' means 'moonlight' or 'brightness'."
+  },
+  {
+    "instruction": "What is 'दीवो' (Deevo)?",
+    "input": "",
+    "output": "'दीवो' is an earthen oil 'lamp'."
+  },
+  {
+    "instruction": "Explain 'बाती' (Baati).",
+    "input": "",
+    "output": "'बाती' is the cotton 'wick' used in an oil lamp."
+  },
+  {
+    "instruction": "What does 'धूप' (Dhoop) mean?",
+    "input": "",
+    "output": "'धूप' refers to incense or intense sunlight, depending on context."
+  },
+  {
+    "instruction": "Translate 'अग्नि' (Agni) or 'आग' (Aag).",
+    "input": "",
+    "output": "'आग' means 'fire'."
+  },
+  {
+    "instruction": "What is 'राख' (Raakh)?",
+    "input": "",
+    "output": "'राख' means 'ash'."
+  },
+  {
+    "instruction": "Define 'चूल्हो' (Choolho).",
+    "input": "",
+    "output": "'चूल्हो' is a traditional earthen 'stove'."
+  },
+  {
+    "instruction": "What does 'लकड़ी' (Lakdi) or 'लाठी' (Laathi) mean?",
+    "input": "",
+    "output": "'लकड़ी' means 'wood' or 'timber'."
+  },
+  {
+    "instruction": "Explain 'सीख' (Seekh).",
+    "input": "",
+    "output": "'सीख' means 'advice', 'lesson', or 'permission to leave' (bidding farewell)."
+  },
+  {
+    "instruction": "What is 'दवा' (Dawa) or 'दारू' (Daaru)?",
+    "input": "",
+    "output": "'दवा' means medicine. Historically, 'दारू' also referred to medicine/gunpowder, though now it mostly means liquor."
+  },
+  {
+    "instruction": "Translate 'रोग' (Rog).",
+    "input": "",
+    "output": "'रोग' means 'disease' or 'illness'."
+  },
+  {
+    "instruction": "What does 'वैद' (Vaid) mean?",
+    "input": "",
+    "output": "'वैद' is a traditional 'doctor' or 'healer'."
+  },
+  {
+    "instruction": "Define 'मेलो' (Melo).",
+    "input": "",
+    "output": "'मेलो' translates to a 'fair' or 'festival gathering'. Example: 'पुष्कर रो मेलो' (Pushkar Fair)."
+  }
+]

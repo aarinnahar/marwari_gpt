@@ -1,0 +1,7 @@
+unsloth
+bitsandbytes
+transformers
+datasets
+trl
+peft
+torch

@@ -1,0 +1,1002 @@
+[
+  {
+    "instruction": "Who speaks the Rajasthani language and how many speakers are there?",
+    "input": "",
+    "output": "राजस्थानी भाषा राजस्थान, आस-पड़ोस रा राज्यां और पूरी दुनिया में रहवण आळा राजस्थानी लोगां री मायड़ भाषा है। इणनै लगभग 8-10 करोड़ (80-100 million) लोग बोलै।"
+  },
+  {
+    "instruction": "Which script is used to write Rajasthani?",
+    "input": "",
+    "output": "पैली राजस्थानी लिखण वास्तै मोड़िया (महाजनी) लिपि रो उपयोग होवतो हो, पण आजकाल आ देवनागरी लिपि में लिखी जावै।"
+  },
+  {
+    "instruction": "What are the well-known dialects of Rajasthani?",
+    "input": "",
+    "output": "राजस्थानी री मुख्य बोलियां में मारवाड़ी, मेवाड़ी, ढूंढाड़ी, शेखावाटी, हाड़ौती, मालवी और दूजी कई बोलियां सामिल है।"
+  },
+  {
+    "instruction": "Can you name some famous musicians who sing in Rajasthani?",
+    "input": "",
+    "output": "हां, मामे खान और ईला अरुण जियान कई सुप्रसिद्ध गावण आळा राजस्थानी में गावै।"
+  },
+  {
+    "instruction": "What is the historical literature tradition of Rajasthani called?",
+    "input": "",
+    "output": "राजस्थानी रो इतिहास कुवलयमाला और डिंगल परंपरा सूं जुड़्योड़ो है, जिको आज ताणी चालतो आ रह्यो है।"
+  },
+  {
+    "instruction": "How do you say 'Hello' respectfully in Marwari?",
+    "input": "",
+    "output": "मारवाड़ी में आदर सूं मिळण बगत 'राम राम सा' कैरीजै।"
+  },
+  {
+    "instruction": "How to say 'Goodbye' in Rajasthani?",
+    "input": "",
+    "output": "विदा लेवण बगत राजस्थानी में 'राम राम' कैवै।"
+  },
+  {
+    "instruction": "मारवाड़ी में 'Forgive me' कीकर कैवां?",
+    "input": "",
+    "output": "थे 'माफी हुजुर' या 'मन्नै माफ करो' कैय सको हो।"
+  },
+  {
+    "instruction": "What are the words for 'Yes' and 'No' in Marwari?",
+    "input": "",
+    "output": "'Yes' वास्तै 'हां', 'हम्बै' या 'होय' कैवै, और 'No' वास्तै 'ना' या 'कोनी' काम में लेवै।"
+  },
+  {
+    "instruction": "How to ask 'How are you?' formally in Marwari?",
+    "input": "",
+    "output": "आदर सूं पूछण वास्तै थे कैय सको हो: 'थे कीसा हो?'"
+  },
+  {
+    "instruction": "How do I reply 'Fine, thank you' in Marwari?",
+    "input": "",
+    "output": "थे कैय सको हो: 'म्हे चोखा हां, आभार'।"
+  },
+  {
+    "instruction": "What is the Marwari translation for 'What is your name?'",
+    "input": "",
+    "output": "मारवाड़ी में इणनै 'थारो नाम कांई है?' पूछै।"
+  },
+  {
+    "instruction": "मैं मारवाड़ी में कैसे बताऊँ कि मेरा नाम क्या है?",
+    "input": "",
+    "output": "थे कैय सको हो: 'म्हारो नाम (थारो नाम) है।'"
+  },
+  {
+    "instruction": "How to say 'Nice to meet you' in standard Marwari?",
+    "input": "",
+    "output": "थे कैय सको हो: 'थारै सूं मिल'र आणंद आयो।'"
+  },
+  {
+    "instruction": "How do you say 'Thank you' in Rajasthani?",
+    "input": "",
+    "output": "धन्यवाद देहण वास्तै 'आभार' या 'धन्यवाद' कैरीजै।"
+  },
+  {
+    "instruction": "Translate 'Thank you very much' into Marwari.",
+    "input": "",
+    "output": "इणनै मारवाड़ी में 'घणो घणो आभार' कैवै।"
+  },
+  {
+    "instruction": "How do I say 'Welcome' to a guest in Rajasthan?",
+    "input": "",
+    "output": "मेहमानां रो स्वागत करण वास्तै 'पधारो सा' कैरीजै।"
+  },
+  {
+    "instruction": "How to get someone's attention respectfully in Marwari?",
+    "input": "",
+    "output": "ध्यान खेंचण या अभिवादन करण वास्तै 'खम्मा घणी' बोल्यो जावै।"
+  },
+  {
+    "instruction": "How do you say 'See you later' (informal goodbye) in Marwari?",
+    "input": "",
+    "output": "अनौपचारिक रूप सूं विदा लेवण वास्तै 'पछे मिलस्यां' कैवै।"
+  },
+  {
+    "instruction": "What is 'Good morning' in Rajasthani?",
+    "input": "",
+    "output": "सुबह रा बगत 'सुप्रभात' कैरीजै।"
+  },
+  {
+    "instruction": "How do you say 'Good evening'?",
+    "input": "",
+    "output": "शाम रा बगत 'शुभ सिंझ्या' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Good night' into Marwari.",
+    "input": "",
+    "output": "रात नै 'शुभ रात्रि' कैरीजै।"
+  },
+  {
+    "instruction": "How to tell someone 'Go to sleep' for the night?",
+    "input": "",
+    "output": "सोवण वास्तै थे 'सो जाओ' कैय सको हो।"
+  },
+  {
+    "instruction": "How do I ask 'How much money?' when buying something in Rajasthan?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'कित्ता पैसा?' या 'कितरा पैसा?'"
+  },
+  {
+    "instruction": "Where is your bedroom? - Translate to Marwari.",
+    "input": "",
+    "output": "थारो सोवण रो कमरो कठे है?"
+  },
+  {
+    "instruction": "How to ask for the bathroom location in Marwari?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'शौचालय कठै है?'"
+  },
+  {
+    "instruction": "How to ask someone 'Where are you?'",
+    "input": "",
+    "output": "मारवाड़ी में पूछो: 'थे सिध हो?'"
+  },
+  {
+    "instruction": "I would like to drink some water. How to say this?",
+    "input": "",
+    "output": "थे कैय सको हो: 'मन्नै पाणी पीणो है' या 'मन्नै पाणी पा (ओ)'।"
+  },
+  {
+    "instruction": "मुझे बहुत प्यास लगी है। इसे मारवाड़ी में कैसे कहूँ?",
+    "input": "",
+    "output": "थे कैय सको हो: 'मन्नै तीस लाग रही है।'"
+  },
+  {
+    "instruction": "How do I tell someone I don't speak Rajasthani well?",
+    "input": "",
+    "output": "थे कैय सको हो: 'मन्नै राजस्थानी चोखी तरीयां बोलती कोनी आवै।'"
+  },
+  {
+    "instruction": "मारवाड़ी में कीकर पूछां कि 'क्या आपको अंग्रेजी बोलनी आती है?'",
+    "input": "",
+    "output": "इण वास्तै थे पूछ सको हो: 'थानै अंग्रेजी बोलणी आवै है के?'"
+  },
+  {
+    "instruction": "How do I ask if anyone nearby speaks English?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'अठै कोई अंग्रेजी बोलणाळो है के?'"
+  },
+  {
+    "instruction": "How to say 'I don't understand' in Marwari?",
+    "input": "",
+    "output": "थे कैय सको हो: 'म्हारी समज मांय कोनी आवै'।"
+  },
+  {
+    "instruction": "Translate 'I didn't get it' to Rajasthani.",
+    "input": "",
+    "output": "मारवाड़ी में इणनै 'हुं समज्यो कोनी' कैवै।"
+  },
+  {
+    "instruction": "How do I say 'Where are you going?' in Marwari?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'थे सिध जा रह्या हो?' या 'थे कठे जा रह्या हो?'"
+  },
+  {
+    "instruction": "Translate 'Where do you live?' into Rajasthani.",
+    "input": "",
+    "output": "मारवाड़ी में पूछो: 'थे कठै रहवो हो?'"
+  },
+  {
+    "instruction": "How to ask 'What are you doing?' in Marwari?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'थे कांई कर रह्या हो?'"
+  },
+  {
+    "instruction": "Translate 'What happened here?' to Marwari.",
+    "input": "",
+    "output": "मारवाड़ी में इणनै 'अठे कांई होयो हो?' कैवै।"
+  },
+  {
+    "instruction": "How do I ask 'Where is this place?' in Rajasthani?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'आ (जग्या रो नाम) कठै है?'"
+  },
+  {
+    "instruction": "अगर म्हाने पूछणो होवै कि 'बाजार कहाँ है?', तो मारवाड़ी में कीकर पूछां?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'बजार कठे है?'"
+  },
+  {
+    "instruction": "How do I shout 'Help!' in Marwari?",
+    "input": "",
+    "output": "थे जोर सूं कैय सको हो: 'मदत करो!'"
+  },
+  {
+    "instruction": "How to tell someone to 'Look out!' or be careful?",
+    "input": "",
+    "output": "सावधान करण वास्तै 'संभळो!' कैरीजै।"
+  },
+  {
+    "instruction": "How to say 'Leave me alone!' in Marwari?",
+    "input": "",
+    "output": "थे कैय सको हो: 'मन्नै एकलो (या एकली) छोड दे/द्यो!'"
+  },
+  {
+    "instruction": "Translate 'Don't touch me!' into Rajasthani.",
+    "input": "",
+    "output": "मारवाड़ी में इणनै 'मन्नै हाथ मना लगा (ओ)!' कैवै।"
+  },
+  {
+    "instruction": "How to say 'I'll call the police'?",
+    "input": "",
+    "output": "थे कैय सको हो: 'हुं पुलिस नै बुला लेस्यूं'।"
+  },
+  {
+    "instruction": "How to tell someone 'Stop! He's a thief' in Marwari?",
+    "input": "",
+    "output": "थे जोर सूं कैय सको हो: 'थम्मो ! ओ चोर है।'"
+  },
+  {
+    "instruction": "How do I say 'I need your help'?",
+    "input": "",
+    "output": "थे कैय सको हो: 'मन्नै थारी मदद चहिजे'।"
+  },
+  {
+    "instruction": "Translate 'It's an emergency' into Marwari.",
+    "input": "",
+    "output": "मारवाड़ी में कैवै: 'आ एक आपातकाळीन स्थिति है।'"
+  },
+  {
+    "instruction": "मैं खो गया हूँ। किसी से मारवाड़ी में कैसे बताऊँ?",
+    "input": "",
+    "output": "थे कैय सको हो: 'हुं गमग्यो'।"
+  },
+  {
+    "instruction": "How to say 'I forgot my way' in Rajasthani?",
+    "input": "",
+    "output": "थे कैय सको हो: 'हुं म्हारो गेलो भूलग्यो'।"
+  },
+  {
+    "instruction": "Translate 'I lost my bag' to Marwari.",
+    "input": "",
+    "output": "मारवाड़ी में कैवै: 'म्हारो थेलो गमग्यो'।"
+  },
+  {
+    "instruction": "How to say 'I lost my wallet'?",
+    "input": "",
+    "output": "थे कैय सको हो: 'म्हारो बटुओ गमग्यो'।"
+  },
+  {
+    "instruction": "How do I tell someone 'I am sick' in Marwari?",
+    "input": "",
+    "output": "थे कैय सको हो: 'म्हारी आसण कोनी।'"
+  },
+  {
+    "instruction": "Translate 'I am injured' into Rajasthani.",
+    "input": "",
+    "output": "मारवाड़ी में इणनै 'म्हारै लागगी' कैवै।"
+  },
+  {
+    "instruction": "मारवाड़ी में कीकर कैवां कि 'मुझे डॉक्टर की जरूरत है'?",
+    "input": "",
+    "output": "थे कैय सको हो: 'मन्नै डॉक्टर री जरूरत है।'"
+  },
+  {
+    "instruction": "How do I ask someone if I can use their phone in Marwari?",
+    "input": "",
+    "output": "थे नम्रता सूं पूछ सको हो: 'हुं थारो फोन बापर सकूं हूं के?'"
+  },
+  {
+    "instruction": "How to say 'Can you drop me at the hospital?'",
+    "input": "",
+    "output": "थे पूछ सको हो: 'थे मन्नै अस्पताळ ताणी छोड सको हो के?'"
+  },
+  {
+    "instruction": "What is the Marwari word for 'Yesterday'?",
+    "input": "",
+    "output": "मारवाड़ी में बीतेड़ै काल नै 'गया काल' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Tomorrow' into Rajasthani.",
+    "input": "",
+    "output": "आवण आळै काल नै मारवाड़ी में 'काल' कैवै।"
+  },
+  {
+    "instruction": "What is the highest respect pronoun for 'You' in Marwari?",
+    "input": "",
+    "output": "सबसूं आदर वाळो सर्वनाम 'आप' है।"
+  },
+  {
+    "instruction": "What is the middle level pronoun for 'You' in Rajasthani?",
+    "input": "",
+    "output": "मध्यम आदर वास्तै 'थे' (The) काम में लेवै।"
+  },
+  {
+    "instruction": "How do you say 'You' informally (lowest respect)?",
+    "input": "",
+    "output": "सबसूं अनौपचारिक रूप सूं 'तुम' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Me' into Marwari.",
+    "input": "",
+    "output": "मारवाड़ी में इणनै 'म्हु' (mhu) कैवै।"
+  },
+  {
+    "instruction": "How do you say 'We' (including the listener) in Rajasthani?",
+    "input": "",
+    "output": "सुणन आळै नै सामिल कर'र 'We' नै 'आपां' (apa) कैवै।"
+  },
+  {
+    "instruction": "How do you say 'We' (excluding the listener)?",
+    "input": "",
+    "output": "सुणन आळै नै सामिल नीं कर'र 'We' नै 'म्है' (mhe) कैवै।"
+  },
+  {
+    "instruction": "What is the Marwari pronoun for 'He/She/It'?",
+    "input": "",
+    "output": "मारवाड़ी में इण वास्तै 'वो' या 'ओ' (vo/o) काम में लेवै।"
+  },
+  {
+    "instruction": "Translate 'They' into Rajasthani.",
+    "input": "",
+    "output": "मारवाड़ी में बहुवचन 'They' वास्तै 'उण' या 'वे' (unn/ve) कैवै।"
+  },
+  {
+    "instruction": "What is the question word for 'Where' in Marwari?",
+    "input": "",
+    "output": "मारवाड़ी में 'Where' नै 'कठे' कैवै।"
+  },
+  {
+    "instruction": "Translate 'What' into Rajasthani.",
+    "input": "",
+    "output": "'What' नै मारवाड़ी में 'कांई' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'When' in Marwari?",
+    "input": "",
+    "output": "मारवाड़ी में 'When' नै 'कदै' कैवै।"
+  },
+  {
+    "instruction": "What is the word for 'Why' in Rajasthani?",
+    "input": "",
+    "output": "'Why' नै मारवाड़ी में 'क्यूँ' या 'कांई' कैवै।"
+  },
+  {
+    "instruction": "How to say 'For what reason' in Marwari?",
+    "input": "",
+    "output": "इणनै 'कांई खातर' कैवै, जिको 'कांई' रो मोटो रूप है।"
+  },
+  {
+    "instruction": "Translate 'Who' into Marwari.",
+    "input": "",
+    "output": "मारवाड़ी में 'Who' नै 'कुण' कैवै।"
+  },
+  {
+    "instruction": "What is the question word for 'Which'?",
+    "input": "",
+    "output": "'Which' नै मारवाड़ी में 'कुणसो' (पुल्लिंग) या 'कुणसी' (स्त्रीलिंग) कैवै।"
+  },
+  {
+    "instruction": "How do you ask 'How much' for a masculine object?",
+    "input": "",
+    "output": "पुल्लिंग वास्तै 'कत्रो', 'कित्तो', या 'कितरो' कैवै।"
+  },
+  {
+    "instruction": "How to ask 'How much' for a feminine object?",
+    "input": "",
+    "output": "स्त्रीलिंग वास्तै 'कत्री', 'कित्ती', या 'कितरी' कैवै।"
+  },
+  {
+    "instruction": "How do you ask 'How much/many' in plural?",
+    "input": "",
+    "output": "बहुवचन वास्तै 'कत्रा', 'कित्ता', या 'कितरा' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Zero' in Marwari?",
+    "input": "",
+    "output": "'Zero' नै मारवाड़ी में 'सून्य' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '1' into Rajasthani.",
+    "input": "",
+    "output": "एक नै मारवाड़ी में 'एक' (ek) कैवै।"
+  },
+  {
+    "instruction": "How to say the number '2' in Marwari?",
+    "input": "",
+    "output": "दो नै मारवाड़ी में 'बे' (be) या 'दो' (do) कैवै।"
+  },
+  {
+    "instruction": "Translate the number '3' to Marwari.",
+    "input": "",
+    "output": "तीन नै मारवाड़ी में 'तीन' (teen) कैवै।"
+  },
+  {
+    "instruction": "How do you say the number '4' in Rajasthani?",
+    "input": "",
+    "output": "चार नै 'चार' (chaar) कैवै।"
+  },
+  {
+    "instruction": "Translate the number '5' into Marwari.",
+    "input": "",
+    "output": "पांच नै मारवाड़ी में 'पांच' (paanch) कैवै।"
+  },
+  {
+    "instruction": "How to say the number '6' in Rajasthani?",
+    "input": "",
+    "output": "छह नै मारवाड़ी में 'छः' या 'छे' (chha/chhe) कैवै।"
+  },
+  {
+    "instruction": "Translate the number '7' into Marwari.",
+    "input": "",
+    "output": "सात नै मारवाड़ी में 'सात' या 'हात' (haat/saat) कैवै।"
+  },
+  {
+    "instruction": "How do you say the number '8' in Marwari?",
+    "input": "",
+    "output": "आठ नै मारवाड़ी में 'आठ' (aath) कैवै।"
+  },
+  {
+    "instruction": "Translate the number '9' into Rajasthani.",
+    "input": "",
+    "output": "नौ नै मारवाड़ी में 'नो' (no) कैवै।"
+  },
+  {
+    "instruction": "How to say the number '10' in Marwari?",
+    "input": "",
+    "output": "दस नै मारवाड़ी में 'दस' (das) कैवै।"
+  },
+  {
+    "instruction": "Translate the number '11' into Marwari.",
+    "input": "",
+    "output": "ग्यारह नै मारवाड़ी में 'इग्यारा' कैवै।"
+  },
+  {
+    "instruction": "How do you say '12' in Rajasthani?",
+    "input": "",
+    "output": "बारह नै मारवाड़ी में 'बारा' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '13' to Marwari.",
+    "input": "",
+    "output": "तेरह नै मारवाड़ी में 'तेरा' कैवै।"
+  },
+  {
+    "instruction": "How to say '14' in Marwari?",
+    "input": "",
+    "output": "चौदह नै मारवाड़ी में 'चौदा' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '15' into Rajasthani.",
+    "input": "",
+    "output": "पंद्रह नै मारवाड़ी में 'पंदरा' कैवै।"
+  },
+  {
+    "instruction": "How do you say '16' in Marwari?",
+    "input": "",
+    "output": "सोलह नै मारवाड़ी में 'सोळा' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '17' into Marwari.",
+    "input": "",
+    "output": "सत्रह नै मारवाड़ी में 'सतरा' कैवै।"
+  },
+  {
+    "instruction": "How to say '18' in Rajasthani?",
+    "input": "",
+    "output": "अठारह नै मारवाड़ी में 'अठारा' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '19' into Marwari.",
+    "input": "",
+    "output": "उन्नीस नै मारवाड़ी में 'उघणीस' कैवै।"
+  },
+  {
+    "instruction": "How do you say '20' in Marwari?",
+    "input": "",
+    "output": "बीस नै मारवाड़ी में 'बीस' या 'बीह' (beeh/bees) कैवै।"
+  },
+  {
+    "instruction": "Translate the number '30' into Rajasthani.",
+    "input": "",
+    "output": "तीस नै मारवाड़ी में 'तीस' कैवै।"
+  },
+  {
+    "instruction": "How to say '40' in Marwari?",
+    "input": "",
+    "output": "चालीस नै मारवाड़ी में 'चाळीस' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '50' into Marwari.",
+    "input": "",
+    "output": "पचास नै मारवाड़ी में 'पचास' या 'पचाह' कैवै।"
+  },
+  {
+    "instruction": "How do you say '60' in Rajasthani?",
+    "input": "",
+    "output": "साठ नै मारवाड़ी में 'साठ' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '70' into Marwari.",
+    "input": "",
+    "output": "सत्तर नै मारवाड़ी में 'सत्तर' या 'सिंतर' कैवै।"
+  },
+  {
+    "instruction": "How to say '80' in Marwari?",
+    "input": "",
+    "output": "अस्सी नै मारवाड़ी में 'अस्सी' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '90' into Rajasthani.",
+    "input": "",
+    "output": "नब्बे नै मारवाड़ी में 'नब्बे' कैवै।"
+  },
+  {
+    "instruction": "How do you say '100' in Marwari?",
+    "input": "",
+    "output": "सौ नै मारवाड़ी में 'सो' या 'हो' (Saw री तरियां बोलै) कैवै।"
+  },
+  {
+    "instruction": "Translate the number '200' into Marwari.",
+    "input": "",
+    "output": "दो सौ नै मारवाड़ी में 'दो सो' या 'बे हो' कैवै।"
+  },
+  {
+    "instruction": "How to say '300' in Rajasthani?",
+    "input": "",
+    "output": "तीन सौ नै मारवाड़ी में 'तीन सो' या 'तीन हो' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '400' into Marwari.",
+    "input": "",
+    "output": "चार सौ नै मारवाड़ी में 'चार सो' या 'चार हो' कैवै।"
+  },
+  {
+    "instruction": "How do you say '500' in Marwari?",
+    "input": "",
+    "output": "पांच सौ नै मारवाड़ी में 'पांच सो' या 'पांच हो' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '600' into Rajasthani.",
+    "input": "",
+    "output": "छह सौ नै मारवाड़ी में 'छः सो', 'छे सो' या 'छे हो' कैवै।"
+  },
+  {
+    "instruction": "How to say '700' in Marwari?",
+    "input": "",
+    "output": "सात सौ नै मारवाड़ी में 'सात सो' या 'हात हो' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '800' into Marwari.",
+    "input": "",
+    "output": "आठ सौ नै मारवाड़ी में 'आठ सो' या 'आठ हो' कैवै।"
+  },
+  {
+    "instruction": "How do you say '900' in Rajasthani?",
+    "input": "",
+    "output": "नौ सौ नै मारवाड़ी में 'नो सो' या 'नो हो' कैवै।"
+  },
+  {
+    "instruction": "Translate the number '1000' into Marwari.",
+    "input": "",
+    "output": "एक हज़ार नै मारवाड़ी में 'हजार' कैवै।"
+  },
+  {
+    "instruction": "How to say '10,000' in Marwari?",
+    "input": "",
+    "output": "दस हज़ार नै मारवाड़ी में 'दस हजार' कैवै।"
+  },
+  {
+    "instruction": "Translate '100,000' (One Lakh) into Rajasthani.",
+    "input": "",
+    "output": "एक लाख नै मारवाड़ी में 'एक लाख' कैवै।"
+  },
+  {
+    "instruction": "How do you say '10 Million' (One Crore) in Marwari?",
+    "input": "",
+    "output": "एक करोड़ नै मारवाड़ी में 'एक करोड़' कैवै।"
+  },
+  {
+    "instruction": "What is the word for the color 'Black' in Marwari?",
+    "input": "",
+    "output": "काळो रंग नै मारवाड़ी में 'काळो' कैवै।"
+  },
+  {
+    "instruction": "Translate the color 'White' into Rajasthani.",
+    "input": "",
+    "output": "सफेद रंग नै मारवाड़ी में 'धोळो' या 'सफेद/हफेद' कैवै।"
+  },
+  {
+    "instruction": "How do you say the color 'Red' in Marwari?",
+    "input": "",
+    "output": "लाल रंग नै मारवाड़ी में 'रातो' या 'लाल' कैवै।"
+  },
+  {
+    "instruction": "What is 'Kasumbo' in Rajasthani culture?",
+    "input": "",
+    "output": "कसुम्बो पैली एक पीवण आळै पदार्थ वास्तै बोल्यो जावतो, पण आजकाल ओ एक गैरो रातो-नारंगी (Red-orange) रंग बतावण वास्तै काम आवै, जियान डूबतो सूरज या पारंपरिक पगड़ी/साफो।"
+  },
+  {
+    "instruction": "Translate the color 'Yellow' into Marwari.",
+    "input": "",
+    "output": "पीला रंग नै मारवाड़ी में 'पीळो' कैवै।"
+  },
+  {
+    "instruction": "How to say the color 'Blue' in Rajasthani?",
+    "input": "",
+    "output": "नीला रंग नै मारवाड़ी में 'निलो' कैवै।"
+  },
+  {
+    "instruction": "What is 'Turquoise' called in Marwari?",
+    "input": "",
+    "output": "Turquoise रंग नै मारवाड़ी में 'फिरोजी' कैवै।"
+  },
+  {
+    "instruction": "Translate the color 'Pink' into Marwari.",
+    "input": "",
+    "output": "गुलाबी रंग नै मारवाड़ी में 'गुलाबी' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Dark pink' in Rajasthani?",
+    "input": "",
+    "output": "गैरो गुलाबी (Dark pink) रंग नै मारवाड़ी में 'रानी' कैवै।"
+  },
+  {
+    "instruction": "What is the word for the color 'Green' in Marwari?",
+    "input": "",
+    "output": "हरा रंग नै मारवाड़ी में 'लिलो' या 'हर्यो' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Sky blue' into Marwari.",
+    "input": "",
+    "output": "आसमानी रंग नै मारवाड़ी में 'आसमानी' ही कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Pale' (color modifier) in Rajasthani?",
+    "input": "",
+    "output": "फीका रंग नै मारवाड़ी में 'फिको' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Dark' (color modifier) into Marwari.",
+    "input": "",
+    "output": "गैरा रंग नै मारवाड़ी में 'गहरो' कैवै।"
+  },
+  {
+    "instruction": "How to say 'Bright' in Marwari when describing colors?",
+    "input": "",
+    "output": "चमकीला या गाढ़ा रंग नै मारवाड़ी में 'चटक' कैवै।"
+  },
+  {
+    "instruction": "What is the word for 'Glitter' or shiny in Rajasthani?",
+    "input": "",
+    "output": "चमकदार या चमकीला नै मारवाड़ी में 'चमकीलो' कैवै।"
+  },
+  {
+    "instruction": "Translate the color 'Orange' into Marwari.",
+    "input": "",
+    "output": "नारंगी रंग नै मारवाड़ी में 'नारंगी' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Saffron' color in Rajasthani?",
+    "input": "",
+    "output": "केसरिया रंग नै मारवाड़ी में 'केसरिया' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Purple' into Marwari.",
+    "input": "",
+    "output": "बैंगनी रंग नै मारवाड़ी में 'बैंगणी' या 'जामुनी' कैवै।"
+  },
+  {
+    "instruction": "How to say 'Colourful' in Rajasthani?",
+    "input": "",
+    "output": "रंग-बिरंगा नै मारवाड़ी में 'रंगीलो' या 'रंगबिरंगो' कैवै।"
+  },
+  {
+    "instruction": "What is the word for 'Brown' in Marwari?",
+    "input": "",
+    "output": "भूरा रंग नै मारवाड़ी में 'भूरो' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Car' into Marwari.",
+    "input": "",
+    "output": "कार नै मारवाड़ी में 'गाडी' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Cart/carriage' in Rajasthani?",
+    "input": "",
+    "output": "गाड़ी या ठेला नै मारवाड़ी में 'गाडो' कैवै।"
+  },
+  {
+    "instruction": "What is a 'Camel cart' called in Marwari?",
+    "input": "",
+    "output": "ऊंट गाड़ी नै मारवाड़ी में 'ऊंट गाडो' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Rikshaw' into Marwari.",
+    "input": "",
+    "output": "रिक्शा नै मारवाड़ी में 'रिक्सो' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Bus terminal' in Rajasthani?",
+    "input": "",
+    "output": "बस स्टैंड नै मारवाड़ी में 'बस अड्डो' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Train' into Marwari.",
+    "input": "",
+    "output": "ट्रेन नै मारवाड़ी में 'रेलगाडी' कैवै।"
+  },
+  {
+    "instruction": "What is 'Aeroplane' called in Rajasthani?",
+    "input": "",
+    "output": "हवाई जहाज़ नै मारवाड़ी में 'हवाई इयाज' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Airport' into Marwari.",
+    "input": "",
+    "output": "एयरपोर्ट नै मारवाड़ी में 'हवाई अड्डो' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Harbour' in Marwari?",
+    "input": "",
+    "output": "बंदरगाह नै मारवाड़ी में 'बंदर' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Ship' into Rajasthani.",
+    "input": "",
+    "output": "पाणी रा जहाज़ नै मारवाड़ी में 'इयाज' (jhyaj) कैवै।"
+  },
+  {
+    "instruction": "What is the direction 'East' called in Marwari?",
+    "input": "",
+    "output": "पूर्व दिशा नै मारवाड़ी में 'आगुणो' या 'आगुणी' कैवै।"
+  },
+  {
+    "instruction": "Translate the direction 'West' into Marwari.",
+    "input": "",
+    "output": "पश्चिम दिशा नै मारवाड़ी में 'आथुणो' या 'आथुणी' कैवै।"
+  },
+  {
+    "instruction": "How do you say the direction 'North' in Rajasthani?",
+    "input": "",
+    "output": "उत्तर दिशा नै मारवाड़ी में 'उत्तर' ही कैवै।"
+  },
+  {
+    "instruction": "Translate the direction 'South' into Marwari.",
+    "input": "",
+    "output": "दक्षिण दिशा नै मारवाड़ी में 'दक्खिण' या 'दक्षिण' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Up' in Marwari?",
+    "input": "",
+    "output": "ऊपर नै मारवाड़ी में 'उप्पर' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Down' into Rajasthani.",
+    "input": "",
+    "output": "नीचे नै मारवाड़ी में 'नीचै' या 'हेटे' कैवै।"
+  },
+  {
+    "instruction": "What is 'Left' direction called in Marwari?",
+    "input": "",
+    "output": "बायां (Left) नै मारवाड़ी में 'डाबो' या 'उल्टो हाथ' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Right' direction in Marwari?",
+    "input": "",
+    "output": "दायां (Right) नै मारवाड़ी में 'जीवणो', 'जमणो', 'सावळो-हाथ' या 'सुल्टो' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Outside' into Rajasthani.",
+    "input": "",
+    "output": "बाहर नै मारवाड़ी में 'बारे' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Inside' in Marwari?",
+    "input": "",
+    "output": "अंदर नै मारवाड़ी में 'मांयनै' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Front' into Marwari.",
+    "input": "",
+    "output": "सामने नै मारवाड़ी में 'सामै' या 'आगे' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Behind' in Rajasthani?",
+    "input": "",
+    "output": "पीछे नै मारवाड़ी में 'गेलनै' या 'लारै' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Straight' into Marwari.",
+    "input": "",
+    "output": "सीधा नै मारवाड़ी में 'सीधो' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Bent' in Marwari?",
+    "input": "",
+    "output": "टेढ़ा या मुड़ा हुआ नै मारवाड़ी में 'बांको' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Curved' into Rajasthani.",
+    "input": "",
+    "output": "घुमावदार नै मारवाड़ी में 'घुमावदार' ही कैवै।"
+  },
+  {
+    "instruction": "What is 'Having Meal' called in Marwari?",
+    "input": "",
+    "output": "खाणो खावण नै मारवाड़ी में 'जीमणो' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'A meal/feast' in Rajasthani?",
+    "input": "",
+    "output": "भोज या दावत नै मारवाड़ी में 'जीमण' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Water' into Marwari.",
+    "input": "",
+    "output": "पानी नै मारवाड़ी में 'पाणी' कैवै।"
+  },
+  {
+    "instruction": "What are the Marwari words for 'Bread'?",
+    "input": "",
+    "output": "रोटी या ब्रेड वास्तै मारवाड़ी में 'रोटी', 'बाटी', या 'सोगरो' काम में लेवै।"
+  },
+  {
+    "instruction": "How do you respectfully address a man as 'Sir' in Marwari?",
+    "input": "",
+    "output": "'Sir' वास्तै मारवाड़ी में आदर सूं 'सा' (Saa) लगावै।"
+  },
+  {
+    "instruction": "How do you address a woman as 'Ma'am' in Rajasthani?",
+    "input": "",
+    "output": "'Ma'am' वास्तै मारवाड़ी में 'सा' (Saa) या 'बाई' (Bai) कैवै।"
+  },
+  {
+    "instruction": "Translate 'Mother' into Marwari.",
+    "input": "",
+    "output": "मां नै मारवाड़ी में 'मां', 'भाभो', 'बाई', या 'मां-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Father' in Rajasthani?",
+    "input": "",
+    "output": "पिताजी नै मारवाड़ी में 'पिता', 'पप्पा', 'आप-जी-सा', 'दाता', या 'बापू-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Sister' into Marwari.",
+    "input": "",
+    "output": "बहन नै मारवाड़ी में 'भाण' (Bhaan) या 'बाई' कैवै।"
+  },
+  {
+    "instruction": "What is the word for 'Brother' in Marwari?",
+    "input": "",
+    "output": "भाई नै मारवाड़ी में 'भाई' या 'भायो' कैवै।"
+  },
+  {
+    "instruction": "How do you respectfully call an 'Elder Brother' in Rajasthani?",
+    "input": "",
+    "output": "मोटा भाई नै मारवाड़ी में 'भाभा', 'धाड़-भाई', 'दादो', या 'भाई-जी' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Paternal Grandmother' (Dadi) into Marwari.",
+    "input": "",
+    "output": "दादी नै मारवाड़ी में 'दादी-सा/जी', 'बाई', या 'धा' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Paternal Grandfather' (Dada) in Rajasthani?",
+    "input": "",
+    "output": "दादा नै मारवाड़ी में 'दादो-सा/जी' या 'दाता' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Maternal Grandmother' (Nani) into Marwari.",
+    "input": "",
+    "output": "नानी नै मारवाड़ी में 'नानी-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Maternal Grandfather' (Nana) in Rajasthani?",
+    "input": "",
+    "output": "नाना नै मारवाड़ी में 'नानो-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "What is 'Sister in Law' (brother's wife) called in Marwari?",
+    "input": "",
+    "output": "भाभी नै मारवाड़ी में 'भाभी-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Brother in Law' (sister's husband) into Marwari.",
+    "input": "",
+    "output": "जीजाजी नै मारवाड़ी में 'जीजो-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Wife' in Rajasthani?",
+    "input": "",
+    "output": "पत्नी नै मारवाड़ी में 'पत्नी', 'बहू', 'लुगाई', 'बींदणी', या 'घर-आळी' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Husband' into Marwari.",
+    "input": "",
+    "output": "पति नै मारवाड़ी में 'पति', 'आप', 'घर-आळो', या 'बींद' कैवै।"
+  },
+  {
+    "instruction": "What is 'Mother-in-law' called in Marwari?",
+    "input": "",
+    "output": "सास नै मारवाड़ी में 'सासू' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Father-in-law' in Rajasthani?",
+    "input": "",
+    "output": "ससुर नै मारवाड़ी में 'ससुर-सा' या 'सुसरो-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Father's elder brother' (Tau) into Marwari.",
+    "input": "",
+    "output": "ताऊजी नै मारवाड़ी में 'भाभा-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "What is 'Daughter-in-law' called in Marwari?",
+    "input": "",
+    "output": "बहू नै मारवाड़ी में 'बींणी-सा' (Beenni-saa) कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Paternal Uncle' (father's brother) in Rajasthani?",
+    "input": "",
+    "output": "चाचा नै मारवाड़ी में 'काको-सा/जी' या 'काकू' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Paternal Aunt' (father's brother's wife) into Marwari.",
+    "input": "",
+    "output": "चाची नै मारवाड़ी में 'काकी-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "What is 'Paternal Aunt' (father's sister/Bua) called in Marwari?",
+    "input": "",
+    "output": "बुआजी नै मारवाड़ी में 'भुआसा/जी' या 'बासा' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Father's Sister's husband' (Fufa) in Rajasthani?",
+    "input": "",
+    "output": "फूफाजी नै मारवाड़ी में 'फूफो-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Maternal Uncle' (Mom's brother/Mama) into Marwari.",
+    "input": "",
+    "output": "मामाजी नै मारवाड़ी में 'मामो-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "What is 'Maternal Aunt' (Mom's brother's wife/Mami) called in Marwari?",
+    "input": "",
+    "output": "मामीजी नै मारवाड़ी में 'मामी-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Maternal Aunt' (Mom's sister/Masi) in Rajasthani?",
+    "input": "",
+    "output": "मौसी नै मारवाड़ी में 'मासी-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "Translate 'Maternal Uncle' (Mom's sister's husband/Mausa) into Marwari.",
+    "input": "",
+    "output": "मौसाजी नै मारवाड़ी में 'मासो-सा/जी' कैवै।"
+  },
+  {
+    "instruction": "What is the word for 'Friend' in Marwari?",
+    "input": "",
+    "output": "दोस्त या मित्र नै मारवाड़ी में 'बेली', 'भायलो/ली', या 'साथण/हाथण' कैवै।"
+  },
+  {
+    "instruction": "How do you say 'Grandmother/Grandma' in general in Rajasthani?",
+    "input": "",
+    "output": "दादी या नानी नै सामान्य रूप सूं 'दादी-सा', 'बाई', या 'धा' कैवै।"
+  },
+  {
+    "instruction": "How to say 'I love you' in Marwari?",
+    "input": "",
+    "output": "मारवाड़ी में कैवै: 'हुं थानै प्रेम करूं हूं!'"
+  },
+  {
+    "instruction": "How do you ask 'Do you love me?' in Rajasthani?",
+    "input": "",
+    "output": "थे पूछ सको हो: 'थे मन्नै प्रेम करो हो के?'"
+  },
+  {
+    "instruction": "मैं रास्ता भूल गया हूँ और मुझे मदद चाहिए। मारवाड़ी में कैसे कहूँ?",
+    "input": "",
+    "output": "थे कैय सको हो: 'हुं म्हारो गेलो भूलग्यो, मन्नै थारी मदद चहिजे।'"
+  },
+  {
+    "instruction": "How do you address your mother and father respectfully in Rajasthani?",
+    "input": "",
+    "output": "मां नै 'मां-सा/जी' और पिताजी नै 'बापू-सा/जी' या 'दाता' कैर आदर दीजै।"
+  }
+]
