@@ -1,48 +1,31 @@
 import base64
 from huggingface_hub import InferenceClient
 import streamlit as strlit
-import requests
 
-# Initialize Hugging Face client using your Streamlit secret token
-HF_API_URL = "https://api-inference.huggingface.co/models/aarinnahar/Llama-3.2-1B-Marwari-Merged"
+# Initialize the official Hugging Face client securely using your Streamlit secret
+hf_token = strlit.secrets.get("HF_TOKEN", "")
+client = InferenceClient(token=hf_token)
+
 
 def query_huggingface_model(prompt):
-  # Pulls your token securely from Streamlit secrets
-  hf_token = strlit.secrets.get("HF_TOKEN", "")
-  headers = {"Authorization": f"Bearer {hf_token}"}
-  
-  payload = {
-      "inputs": f"User: {prompt}\nAssistant:",
-      "parameters": {
-          "max_new_tokens": 256,
-          "temperature": 0.7,
-          "return_full_text": False,
-      },
-  }
-
   try:
-    response = requests.post(HF_API_URL, headers=headers, json=payload, timeout=60)
-    result = response.json()
+    # Use Hugging Face's text_generation client for your custom merged model
+    response = client.text_generation(
+        model="aarinnahar/Llama-3.2-1B-Marwari-Merged",
+        prompt=f"User: {prompt}\nAssistant:",
+        max_new_tokens=256,
+        temperature=0.7,
+    )
+    return response.strip()
 
-    # Handle successful list response
-    if isinstance(result, list) and len(result) > 0:
-      return result[0].get("generated_text", "उत्तर प्राप्त कोनी हुयो।").strip()
-    
-    # Handle error or cold-start messages from Hugging Face
-    elif isinstance(result, dict) and "error" in result:
-      error_msg = result["error"]
-      if "loading" in error_msg.lower() or "currently loading" in str(result).lower():
-        return (
-            "⏳ Model is waking up from a cold start on Hugging Face's server."
-            " Please wait 30 seconds and send your message again!"
-        )
-      return f"Hugging Face API Error: {error_msg}"
-    
-    else:
-      return str(result)
-      
   except Exception as e:
-    return f"Connection error: {e}"
+    error_msg = str(e)
+    if "loading" in error_msg.lower():
+      return (
+          "⏳ Model is waking up from a cold start on Hugging Face's servers."
+          " Please wait 30 seconds and send your message again!"
+      )
+    return f"Hugging Face API Error: {error_msg}"
 
 
 # 1. Page Configuration
@@ -63,7 +46,7 @@ def set_local_background(image_file):
     return "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=2200&q=90"
 
 
-bg_image_url = set_local_background("desert.jpg.png")
+bg_image_url = set_local_background("desert.jpg")
 
 # 2. Custom CSS Styling
 strlit.markdown(
