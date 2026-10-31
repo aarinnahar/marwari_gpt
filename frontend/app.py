@@ -3,30 +3,45 @@ from huggingface_hub import InferenceClient
 import streamlit as strlit
 
 # Initialize Hugging Face client using your Streamlit secret token
-hf_token = strlit.secrets.get("HF_TOKEN", "")
-client = InferenceClient(token=hf_token)
-
+HF_API_URL = "https://api-inference.huggingface.co/models/aarinnahar/Llama-3.2-1B-Marwari-Merged"
 
 def query_huggingface_model(prompt):
-  try:
-    # Format prompt clearly for Llama causal models
-    formatted_prompt = f"User: {prompt}\nAssistant:"
+  # Pulls your token securely from Streamlit secrets
+  hf_token = strlit.secrets.get("HF_TOKEN", "")
+  headers = {"Authorization": f"Bearer {hf_token}"}
+  
+  payload = {
+      "inputs": f"User: {prompt}\nAssistant:",
+      "parameters": {
+          "max_new_tokens": 256,
+          "temperature": 0.7,
+          "return_full_text": False,
+      },
+  }
 
-    # Use text_generation for custom user repositories
-    response = client.text_generation(
-        model="aarinnahar/Llama-3.2-1B-Marwari-Merged",
-        prompt=formatted_prompt,
-        max_new_tokens=256,
-        temperature=0.7,
-        return_full_text=False,
-    )
-    return response.strip()
+  try:
+    response = requests.post(HF_API_URL, headers=headers, json=payload, timeout=60)
+    result = response.json()
+
+    # Handle successful list response
+    if isinstance(result, list) and len(result) > 0:
+      return result[0].get("generated_text", "उत्तर प्राप्त कोनी हुयो।").strip()
+    
+    # Handle error or cold-start messages from Hugging Face
+    elif isinstance(result, dict) and "error" in result:
+      error_msg = result["error"]
+      if "loading" in error_msg.lower() or "currently loading" in str(result).lower():
+        return (
+            "⏳ Model is waking up from a cold start on Hugging Face's server."
+            " Please wait 30 seconds and send your message again!"
+        )
+      return f"Hugging Face API Error: {error_msg}"
+    
+    else:
+      return str(result)
+      
   except Exception as e:
-    return (
-        f"Hugging Face API Notice: {e}. (Note: If this is the very first time"
-        " querying your newly merged model, Hugging Face can take 1–2 minutes"
-        " to load it into memory. Please wait a moment and try again!)"
-    )
+    return f"Connection error: {e}"
 
 
 # 1. Page Configuration
