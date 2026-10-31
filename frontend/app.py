@@ -9,19 +9,23 @@ client = InferenceClient(token=hf_token)
 
 def query_huggingface_model(prompt):
   try:
-    # Automatically routes to your merged model on Hugging Face
-    response = client.chat_completion(
+    # Format prompt clearly for Llama causal models
+    formatted_prompt = f"User: {prompt}\nAssistant:"
+
+    # Use text_generation for custom user repositories
+    response = client.text_generation(
         model="aarinnahar/Llama-3.2-1B-Marwari-Merged",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=256,
+        prompt=formatted_prompt,
+        max_new_tokens=256,
         temperature=0.7,
+        return_full_text=False,
     )
-    return response.choices[0].message.content
+    return response.strip()
   except Exception as e:
     return (
-        f"Hugging Face API Notice: {e}. (If this is your first time querying,"
-        " the model may be cold-starting. Please wait 20 seconds and try"
-        " again!)"
+        f"Hugging Face API Notice: {e}. (Note: If this is the very first time"
+        " querying your newly merged model, Hugging Face can take 1–2 minutes"
+        " to load it into memory. Please wait a moment and try again!)"
     )
 
 
