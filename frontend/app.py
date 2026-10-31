@@ -1,41 +1,28 @@
 import base64
-import requests
+from huggingface_hub import InferenceClient
 import streamlit as strlit
 
-# Your newly merged model API endpoint
-HF_API_URL = (
-    "https://api-inference.huggingface.co/models/aarinnahar/Llama-3.2-1B-Marwari-Merged"
-)
+# Initialize Hugging Face client using your Streamlit secret token
+hf_token = strlit.secrets.get("HF_TOKEN", "")
+client = InferenceClient(token=hf_token)
 
 
 def query_huggingface_model(prompt):
-  # Pulls your Hugging Face token securely from Streamlit secrets
-  token = strlit.secrets.get("HF_TOKEN", "")
-  headers = {"Authorization": f"Bearer {token}"}
-  payload = {
-      "inputs": prompt,
-      "parameters": {
-          "max_new_tokens": 256,
-          "temperature": 0.7,
-          "return_full_text": False,
-      },
-  }
-
   try:
-    response = requests.post(HF_API_URL, headers=headers, json=payload)
-    result = response.json()
-
-    if isinstance(result, list) and len(result) > 0:
-      return result[0].get("generated_text", "उत्तर प्राप्त कोनी हुयो।")
-    elif isinstance(result, dict) and "error" in result:
-      return (
-          f"Hugging Face API is waking up (Cold start). Please try again in 20"
-          f" seconds. Error: {result['error']}"
-      )
-    else:
-      return str(result)
+    # Automatically routes to your merged model on Hugging Face
+    response = client.chat_completion(
+        model="aarinnahar/Llama-3.2-1B-Marwari-Merged",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=256,
+        temperature=0.7,
+    )
+    return response.choices[0].message.content
   except Exception as e:
-    return f"Connection error: {e}"
+    return (
+        f"Hugging Face API Notice: {e}. (If this is your first time querying,"
+        " the model may be cold-starting. Please wait 20 seconds and try"
+        " again!)"
+    )
 
 
 # 1. Page Configuration
