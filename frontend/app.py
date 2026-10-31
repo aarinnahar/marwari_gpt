@@ -9,9 +9,8 @@ client = InferenceClient(token=hf_token)
 
 def query_huggingface_model(prompt):
   try:
-    # Use Hugging Face's text_generation client for your custom merged model
+    # Query your custom model directly
     response = client.text_generation(
-        model="aarinnahar/Llama-3.2-1B-Marwari-Merged",
         prompt=f"User: {prompt}\nAssistant:",
         max_new_tokens=256,
         temperature=0.7,
@@ -20,7 +19,7 @@ def query_huggingface_model(prompt):
 
   except Exception as e:
     error_msg = str(e)
-    if "loading" in error_msg.lower():
+    if "loading" in error_msg.lower() or "currently loading" in error_msg.lower():
       return (
           "⏳ Model is waking up from a cold start on Hugging Face's servers."
           " Please wait 30 seconds and send your message again!"
