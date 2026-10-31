@@ -1,16 +1,43 @@
 import base64
-from peft import PeftModel
+import requests
 import streamlit as strlit
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# Authenticate with Hugging Face using Streamlit Cloud Secrets
-try:
-  if "HF_TOKEN" in strlit.secrets:
-    login(token=strlit.secrets["HF_TOKEN"])
-except Exception as e:
-  print(f"Login note: {e}")
-    
+# Your newly merged model API endpoint
+HF_API_URL = (
+    "https://api-inference.huggingface.co/models/aarinnahar/Llama-3.2-1B-Marwari-Merged"
+)
+
+
+def query_huggingface_model(prompt):
+  # Pulls your Hugging Face token securely from Streamlit secrets
+  token = strlit.secrets.get("HF_TOKEN", "")
+  headers = {"Authorization": f"Bearer {token}"}
+  payload = {
+      "inputs": prompt,
+      "parameters": {
+          "max_new_tokens": 256,
+          "temperature": 0.7,
+          "return_full_text": False,
+      },
+  }
+
+  try:
+    response = requests.post(HF_API_URL, headers=headers, json=payload)
+    result = response.json()
+
+    if isinstance(result, list) and len(result) > 0:
+      return result[0].get("generated_text", "उत्तर प्राप्त कोनी हुयो।")
+    elif isinstance(result, dict) and "error" in result:
+      return (
+          f"Hugging Face API is waking up (Cold start). Please try again in 20"
+          f" seconds. Error: {result['error']}"
+      )
+    else:
+      return str(result)
+  except Exception as e:
+    return f"Connection error: {e}"
+
+
 # 1. Page Configuration
 strlit.set_page_config(
     page_title="Marwari GPT | खम्मा घणी सा",
@@ -20,7 +47,6 @@ strlit.set_page_config(
 )
 
 
-# Helper to load local desert background image
 def set_local_background(image_file):
   try:
     with open(image_file, "rb") as f:
@@ -28,7 +54,7 @@ def set_local_background(image_file):
     return f"data:image/jpeg;base64,{encoded}"
   except FileNotFoundError:
     return "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=2200&q=90"
-      
+
 
 bg_image_url = set_local_background("desert.jpg.png")
 
@@ -164,61 +190,7 @@ strlit.markdown(
     unsafe_allow_html=True,
 )
 
-
-# 3. Load Model and Tokenizer locally with caching (runs only once)
-@strlit.cache_resource
-def load_model():
-  base_model_id = "meta-llama/Llama-3.2-1B"
-  lora_model_id = "aarinnahar/Llama-3.2-1B-Marwari-LoRA"
-
-  tokenizer = AutoTokenizer.from_pretrained(lora_model_id)
-  base_model = AutoModelForCausalLM.from_pretrained(
-      base_model_id, torch_dtype=torch.float16, device_map="auto"
-  )
-  model = PeftModel.from_pretrained(base_model, lora_model_id)
-  return model, tokenizer
-
-
-with strlit.spinner(
-    "राजस्थानी मॉडल लोड हो रिया है... (Loading Marwari AI model into memory)"
-):
-  model, tokenizer = load_model()
-
-
-with strlit.spinner(
-    "राजस्थानी मॉडल लोड हो रिया है... (Loading Marwari AI model into memory)"
-):
-  model, tokenizer = load_model()
-
-
-with strlit.spinner(
-    "राजस्थानी मॉडल लोड हो रिया है... (Loading Marwari AI model into memory)"
-):
-  model, tokenizer = load_model()
-
-
-# Generation Helper Function
-def generate_marwari_response(prompt):
-  input_text = f"User: {prompt}\nAssistant:"
-  inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
-
-  with torch.no_grad():
-    outputs = model.generate(
-        **inputs,
-        max_new_tokens=250,
-        temperature=0.7,
-        do_sample=True,
-        top_p=0.9,
-        pad_token_id=tokenizer.eos_token_id,
-    )
-
-  response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-  if "Assistant:" in response:
-    response = response.split("Assistant:")[-1].strip()
-  return response
-
-
-# 4. Hero Section
+# 3. Hero Section
 strlit.markdown(
     """
     <div class="hero-container">
@@ -242,7 +214,7 @@ strlit.markdown(
     unsafe_allow_html=True,
 )
 
-# 5. Chat Interface
+# 4. Chat Interface
 with strlit.container():
   strlit.markdown('<div class="chat-wrapper">', unsafe_allow_html=True)
 
@@ -270,7 +242,7 @@ with strlit.container():
 
     with strlit.chat_message("assistant", avatar="🐪"):
       with strlit.spinner("राजस्थानी अंदाज़ में विचार कर रिया हां..."):
-        response = generate_marwari_response(prompt)
+        response = query_huggingface_model(prompt)
         strlit.markdown(response)
 
     strlit.session_state.messages.append(
