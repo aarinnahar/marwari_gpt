@@ -21,7 +21,7 @@ def set_local_background(image_file):
     return "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=2200&q=90"
 
 
-bg_image_url = set_local_background("desert.jpg")
+bg_image_url = set_local_background("desert.jpg.png")
 
 # 2. Immersive Royal Rajasthan Custom CSS with Your Exact Background Image
 strlit.markdown(
