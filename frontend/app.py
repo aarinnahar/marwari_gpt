@@ -1,6 +1,7 @@
 import base64
 from huggingface_hub import InferenceClient
 import streamlit as strlit
+import requests
 
 # Initialize Hugging Face client using your Streamlit secret token
 HF_API_URL = "https://api-inference.huggingface.co/models/aarinnahar/Llama-3.2-1B-Marwari-Merged"
