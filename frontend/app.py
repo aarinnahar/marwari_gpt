@@ -1,6 +1,16 @@
 import base64
+from peft import PeftModel
 import streamlit as strlit
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
+# Authenticate with Hugging Face using Streamlit Cloud Secrets
+try:
+  if "HF_TOKEN" in strlit.secrets:
+    login(token=strlit.secrets["HF_TOKEN"])
+except Exception as e:
+  print(f"Login note: {e}")
+    
 # 1. Page Configuration
 strlit.set_page_config(
     page_title="Marwari GPT | खम्मा घणी सा",
@@ -10,26 +20,24 @@ strlit.set_page_config(
 )
 
 
-# Function to load your local background image as base64
+# Helper to load local desert background image
 def set_local_background(image_file):
   try:
     with open(image_file, "rb") as f:
       encoded = base64.b64encode(f.read()).decode()
     return f"data:image/jpeg;base64,{encoded}"
   except FileNotFoundError:
-    # Fallback default if image isn't renamed to desert.jpg yet
     return "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=2200&q=90"
-
+      
 
 bg_image_url = set_local_background("desert.jpg.png")
 
-# 2. Immersive Royal Rajasthan Custom CSS with Your Exact Background Image
+# 2. Custom CSS Styling
 strlit.markdown(
     f"""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
-    /* Global Full-Screen Custom Desert Background */
     .stApp {{
         background-image: linear-gradient(
             to bottom,
@@ -45,12 +53,10 @@ strlit.markdown(
         color: #F7F3E9;
     }}
 
-    /* Hide standard Streamlit header/footer */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
     header {{visibility: hidden;}}
 
-    /* Centered Branding & Hero Area */
     .hero-container {{
         text-align: center;
         padding: 2.5rem 1rem 1rem 1rem;
@@ -81,7 +87,6 @@ strlit.markdown(
         margin-bottom: 1.5rem;
     }}
 
-    /* Interactive Category / Mode Badges */
     .badge-container {{
         display: flex;
         justify-content: center;
@@ -108,7 +113,6 @@ strlit.markdown(
         transform: translateY(-2px);
     }}
 
-    /* Glassmorphism Chat Container Wrapper */
     .chat-wrapper {{
         background: rgba(25, 15, 10, 0.82);
         border: 1px solid rgba(255, 215, 0, 0.35);
@@ -120,7 +124,6 @@ strlit.markdown(
         margin: 0 auto;
     }}
 
-    /* Chat Messages - High Readability Styling */
     .stChatMessage {{
         background: rgba(45, 28, 18, 0.88) !important;
         border: 1px solid rgba(255, 215, 0, 0.3) !important;
@@ -138,13 +141,11 @@ strlit.markdown(
         font-size: 1.05rem !important;
     }}
 
-    /* User Message Specific Tint */
     [data-testid="stChatMessage"]:nth-child(odd) {{
         background: rgba(65, 40, 24, 0.92) !important;
         border-color: rgba(255, 215, 0, 0.45) !important;
     }}
 
-    /* Chat Input Bar Styling */
     .stChatInputContainer textarea {{
         background-color: rgba(20, 12, 8, 0.95) !important;
         border: 1px solid #FFD700 !important;
@@ -163,7 +164,61 @@ strlit.markdown(
     unsafe_allow_html=True,
 )
 
-# 3. Centered Brand & Hero Section with "खम्मा घणी सा"
+
+# 3. Load Model and Tokenizer locally with caching (runs only once)
+@strlit.cache_resource
+def load_model():
+  base_model_id = "meta-llama/Llama-3.2-1B"
+  lora_model_id = "aarinnahar/Llama-3.2-1B-Marwari-LoRA"
+
+  tokenizer = AutoTokenizer.from_pretrained(lora_model_id)
+  base_model = AutoModelForCausalLM.from_pretrained(
+      base_model_id, torch_dtype=torch.float16, device_map="auto"
+  )
+  model = PeftModel.from_pretrained(base_model, lora_model_id)
+  return model, tokenizer
+
+
+with strlit.spinner(
+    "राजस्थानी मॉडल लोड हो रिया है... (Loading Marwari AI model into memory)"
+):
+  model, tokenizer = load_model()
+
+
+with strlit.spinner(
+    "राजस्थानी मॉडल लोड हो रिया है... (Loading Marwari AI model into memory)"
+):
+  model, tokenizer = load_model()
+
+
+with strlit.spinner(
+    "राजस्थानी मॉडल लोड हो रिया है... (Loading Marwari AI model into memory)"
+):
+  model, tokenizer = load_model()
+
+
+# Generation Helper Function
+def generate_marwari_response(prompt):
+  input_text = f"User: {prompt}\nAssistant:"
+  inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+
+  with torch.no_grad():
+    outputs = model.generate(
+        **inputs,
+        max_new_tokens=250,
+        temperature=0.7,
+        do_sample=True,
+        top_p=0.9,
+        pad_token_id=tokenizer.eos_token_id,
+    )
+
+  response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+  if "Assistant:" in response:
+    response = response.split("Assistant:")[-1].strip()
+  return response
+
+
+# 4. Hero Section
 strlit.markdown(
     """
     <div class="hero-container">
@@ -175,7 +230,6 @@ strlit.markdown(
     unsafe_allow_html=True,
 )
 
-# 4. Interactive Mode Badges
 strlit.markdown(
     """
     <div class="badge-container">
@@ -188,35 +242,39 @@ strlit.markdown(
     unsafe_allow_html=True,
 )
 
-# 5. Clean Chat Interface Container
+# 5. Chat Interface
 with strlit.container():
-    strlit.markdown('<div class="chat-wrapper">', unsafe_allow_html=True)
+  strlit.markdown('<div class="chat-wrapper">', unsafe_allow_html=True)
 
-    # Initialize Session History
-    if "messages" not in strlit.session_state:
-        strlit.session_state.messages = [
-            {
-                "role": "assistant",
-                "content": "खम्मा घणी सा! हुकम, म्हे मारवारी जीपीटी हां। आज थारे वास्ते कई सेवा कर सकूं हूँ?",
-            }
-        ]
+  if "messages" not in strlit.session_state:
+    strlit.session_state.messages = [{
+        "role": "assistant",
+        "content": (
+            "खम्मा घणी सा! हुकम, म्हे मारवारी जीपीटी हां। आज थारे वास्ते कई सेवा"
+            " कर सकूं हूँ?"
+        ),
+    }]
 
-    # Display History
-    for message in strlit.session_state.messages:
-        with strlit.chat_message(message["role"], avatar="🐪" if message["role"] == "assistant" else "👤"):
-            strlit.markdown(message["content"])
+  for message in strlit.session_state.messages:
+    with strlit.chat_message(
+        message["role"], avatar="🐪" if message["role"] == "assistant" else "👤"
+    ):
+      strlit.markdown(message["content"])
 
-    # User Input Handling
-    if prompt := strlit.chat_input("थे कठे बारे में पूछण चाहो हो? (Ask anything in Marwari or English...)"):
-        strlit.session_state.messages.append({"role": "user", "content": prompt})
-        with strlit.chat_message("user", avatar="👤"):
-            strlit.markdown(prompt)
+  if prompt := strlit.chat_input(
+      "थे कठे बारे में पूछण चाहो हो? (Ask anything in Marwari or English...)"
+  ):
+    strlit.session_state.messages.append({"role": "user", "content": prompt})
+    with strlit.chat_message("user", avatar="👤"):
+      strlit.markdown(prompt)
 
-        with strlit.chat_message("assistant", avatar="🐪"):
-            with strlit.spinner("राजस्थानी अंदाज़ में विचार कर रिया हां..."):
-                response = f"खम्मा घणी सा! थारो सवाल सुन्यो: *'{prompt}'*. थारी सेवा में मारवारी जीपीटी हरदम तैयार है।"
-                strlit.markdown(response)
-                
-        strlit.session_state.messages.append({"role": "assistant", "content": response})
+    with strlit.chat_message("assistant", avatar="🐪"):
+      with strlit.spinner("राजस्थानी अंदाज़ में विचार कर रिया हां..."):
+        response = generate_marwari_response(prompt)
+        strlit.markdown(response)
 
-    strlit.markdown('</div>', unsafe_allow_html=True)
+    strlit.session_state.messages.append(
+        {"role": "assistant", "content": response}
+    )
+
+  strlit.markdown("</div>", unsafe_allow_html=True)
