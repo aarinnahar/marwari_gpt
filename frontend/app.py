@@ -11,11 +11,11 @@ def query_colab_backend(prompt):
     # Payload matching what your Colab backend expects
     payload = {
         "prompt": f"User: {prompt}\nAssistant:",
-        "max_new_tokens": 256,
-        "temperature": 0.3,
+        "max_new_tokens": 128,
+        "temperature": 0.15,
         "do_sample" : True,
         "top_p" : 0.9,
-        'repetition_penalty' : 1.15,
+        'repetition_penalty' : 1.30,
         'use_cache' : True
     }
 
