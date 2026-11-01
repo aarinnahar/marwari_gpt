@@ -3,7 +3,6 @@ import requests
 import streamlit as strlit
 
 # Get your active Google Colab ngrok URL from Streamlit secrets
-# (e.g., COLAB_URL = "https://xxxx-xx-xx.ngrok-free.app/generate")
 COLAB_API_URL = strlit.secrets.get("COLAB_URL", "YOUR_NGROK_URL_HERE")
 
 def query_colab_backend(prompt):
@@ -13,10 +12,10 @@ def query_colab_backend(prompt):
         "prompt": f"User: {prompt}\nAssistant:",
         "max_new_tokens": 128,
         "temperature": 0.15,
-        "do_sample" : True,
-        "top_p" : 0.9,
-        'repetition_penalty' : 1.30,
-        'use_cache' : True
+        "do_sample": True,
+        "top_p": 0.9,
+        "repetition_penalty": 1.30,
+        "use_cache": True,
     }
 
     # Send POST request to your Google Colab backend
@@ -24,7 +23,6 @@ def query_colab_backend(prompt):
 
     if response.status_code == 200:
       data = response.json()
-      # Adjust "response" key if your Colab FastAPI endpoint uses a different key (e.g., "generated_text")
       return data.get("response", "").strip()
     else:
       return (
@@ -143,17 +141,6 @@ strlit.markdown(
         transform: translateY(-2px);
     }}
 
-    .chat-wrapper {{
-        background: rgba(25, 15, 10, 0.82);
-        border: 1px solid rgba(255, 215, 0, 0.35);
-        border-radius: 20px;
-        padding: 2rem;
-        backdrop-filter: blur(16px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
-        max-width: 850px;
-        margin: 0 auto;
-    }}
-
     .stChatMessage {{
         background: rgba(45, 28, 18, 0.88) !important;
         border: 1px solid rgba(255, 215, 0, 0.3) !important;
@@ -218,39 +205,41 @@ strlit.markdown(
     unsafe_allow_html=True,
 )
 
-# 4. Chat Interface
-with strlit.container():
-  strlit.markdown('<div class="chat-wrapper">', unsafe_allow_html=True)
+# 4. Initialize Chat Session State
+if "messages" not in strlit.session_state:
+  strlit.session_state.messages = [{
+      "role": "assistant",
+      "content": (
+          "खम्मा घणी सा! हुकम, म्हे मारवारी जीपीटी हां। आज थारे वास्ते कई सेवा"
+          " कर सकूं हूँ?"
+      ),
+  }]
 
-  if "messages" not in strlit.session_state:
-    strlit.session_state.messages = [{
-        "role": "assistant",
-        "content": (
-            "खम्मा घणी सा! हुकम, म्हे मारवारी जीपीटी हां। आज थारे वास्ते कई सेवा"
-            " कर सकूं हूँ?"
-        ),
-    }]
-
-  for message in strlit.session_state.messages:
-    with strlit.chat_message(
-        message["role"], avatar="🐪" if message["role"] == "assistant" else "👤"
-    ):
-      strlit.markdown(message["content"])
-
-  if prompt := strlit.chat_input(
-      "थे कठे बारे में पूछण चाहो हो? (Ask anything in Marwari or English...)"
+# 5. Display existing chat messages in order
+for message in strlit.session_state.messages:
+  with strlit.chat_message(
+      message["role"], avatar="🐪" if message["role"] == "assistant" else "👤"
   ):
-    strlit.session_state.messages.append({"role": "user", "content": prompt})
-    with strlit.chat_message("user", avatar="👤"):
-      strlit.markdown(prompt)
+    strlit.markdown(message["content"])
 
-    with strlit.chat_message("assistant", avatar="🐪"):
-      with strlit.spinner("राजस्थानी अंदाज़ में विचार कर रिया हां..."):
-        response = query_colab_backend(prompt)
-        strlit.markdown(response)
+# 6. Chat Input at the bottom of the page flow
+if prompt := strlit.chat_input(
+    "थे कठे बारे में पूछण चाहो हो? (Ask anything in Marwari or English...)"
+):
+  # Append user message
+  strlit.session_state.messages.append({"role": "user", "content": prompt})
 
-    strlit.session_state.messages.append(
-        {"role": "assistant", "content": response}
-    )
+  # Render user message immediately
+  with strlit.chat_message("user", avatar="👤"):
+    strlit.markdown(prompt)
 
-  strlit.markdown("</div>", unsafe_allow_html=True)
+  # Generate and render assistant response
+  with strlit.chat_message("assistant", avatar="🐪"):
+    with strlit.spinner("राजस्थानी अंदाज़ में विचार कर रिया हां..."):
+      response = query_colab_backend(prompt)
+      strlit.markdown(response)
+
+  # Append assistant response
+  strlit.session_state.messages.append(
+      {"role": "assistant", "content": response}
+  )
