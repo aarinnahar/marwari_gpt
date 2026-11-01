@@ -57,7 +57,7 @@ def set_local_background(image_file):
       encoded = base64.b64encode(f.read()).decode()
     return f"data:image/jpeg;base64,{encoded}"
   except FileNotFoundError:
-    return "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=2200&q=90"
+    return "https://unsplash.com/photos/people-leading-camels-on-sand-dunes-qR8SHi6M_Dk"
 
 
 bg_image_url = set_local_background("desert.jpg")
