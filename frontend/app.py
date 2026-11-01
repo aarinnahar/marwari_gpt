@@ -6,7 +6,6 @@ import streamlit as strlit
 # (e.g., COLAB_URL = "https://xxxx-xx-xx.ngrok-free.app/generate")
 COLAB_API_URL = strlit.secrets.get("COLAB_URL", "YOUR_NGROK_URL_HERE")
 
-
 def query_colab_backend(prompt):
   try:
     # Payload matching what your Colab backend expects
