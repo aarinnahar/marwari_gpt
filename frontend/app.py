@@ -13,8 +13,8 @@ def query_colab_backend(prompt):
         "prompt": f"User: {prompt}\nAssistant:",
         "max_new_tokens": 256,
         "temperature": 0.5,
-        'repetition_penalty' = 1.15,
-        'use_cache' = True
+        'repetition_penalty' : 1.15,
+        'use_cache' : True
     }
 
     # Send POST request to your Google Colab backend
