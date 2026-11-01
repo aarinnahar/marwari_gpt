@@ -4,7 +4,7 @@ import streamlit as strlit
 
 # Initialize the official Hugging Face client securely using your Streamlit secret
 hf_token = strlit.secrets.get("HF_TOKEN", "")
-client = InferenceClient(token=hf_token)
+client = InferenceClient(model='aarinnahar/Llama-3.2-1B-Marwari-Merged', token=hf_token)
 
 
 def query_huggingface_model(prompt):
