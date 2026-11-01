@@ -1,30 +1,42 @@
 import base64
-from huggingface_hub import InferenceClient
+import requests
 import streamlit as strlit
 
-# Initialize the official Hugging Face client securely using your Streamlit secret
-hf_token = strlit.secrets.get("HF_TOKEN", "")
-client = InferenceClient(model='aarinnahar/Llama-3.2-1B-Marwari-Merged', token=hf_token)
+# Get your active Google Colab ngrok URL from Streamlit secrets
+# (e.g., COLAB_URL = "https://xxxx-xx-xx.ngrok-free.app/generate")
+COLAB_API_URL = strlit.secrets.get("COLAB_URL", "YOUR_NGROK_URL_HERE")
 
 
-def query_huggingface_model(prompt):
+def query_colab_backend(prompt):
   try:
-    # Query your custom model directly
-    response = client.text_generation(
-        prompt=f"User: {prompt}\nAssistant:",
-        max_new_tokens=256,
-        temperature=0.7,
-    )
-    return response.strip()
+    # Payload matching what your Colab backend expects
+    payload = {
+        "prompt": f"User: {prompt}\nAssistant:",
+        "max_new_tokens": 256,
+        "temperature": 0.7,
+    }
 
-  except Exception as e:
-    error_msg = str(e)
-    if "loading" in error_msg.lower() or "currently loading" in error_msg.lower():
+    # Send POST request to your Google Colab backend
+    response = requests.post(COLAB_API_URL, json=payload, timeout=60)
+
+    if response.status_code == 200:
+      data = response.json()
+      # Adjust "response" key if your Colab FastAPI endpoint uses a different key (e.g., "generated_text")
+      return data.get("response", "").strip()
+    else:
       return (
-          "⏳ Model is waking up from a cold start on Hugging Face's servers."
-          " Please wait 30 seconds and send your message again!"
+          f"Colab Backend Error (Status {response.status_code}):"
+          f" {response.text}"
       )
-    return f"Hugging Face API Error: {error_msg}"
+
+  except requests.exceptions.ConnectionError:
+    return (
+        "🔌 **Connection Failed:** Could not connect to the Google Colab"
+        " backend. Make sure your Colab notebook and ngrok tunnel are currently"
+        " running!"
+    )
+  except Exception as e:
+    return f"Error: {str(e)}"
 
 
 # 1. Page Configuration
@@ -230,8 +242,8 @@ with strlit.container():
       strlit.markdown(prompt)
 
     with strlit.chat_message("assistant", avatar="🐪"):
-      with strlit.spinner("राजस्थानी अंदाज़ में विचार कर रिया हां..."):
-        response = query_huggingface_model(prompt)
+      with strlit.spinner("राजस्थानी अंदाज़ में विचार कर रिया हां..."):
+        response = query_colab_backend(prompt)
         strlit.markdown(response)
 
     strlit.session_state.messages.append(
