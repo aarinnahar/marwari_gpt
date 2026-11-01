@@ -12,7 +12,9 @@ def query_colab_backend(prompt):
     payload = {
         "prompt": f"User: {prompt}\nAssistant:",
         "max_new_tokens": 256,
-        "temperature": 0.5,
+        "temperature": 0.3,
+        "do_sample" : True,
+        "top_p" : 0.9,
         'repetition_penalty' : 1.15,
         'use_cache' : True
     }
